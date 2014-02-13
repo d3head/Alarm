@@ -281,6 +281,7 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         'scripts/{,*/}*.js',
+                        'sounds/ring.mp3',
                         //'bower_components/jquery/jquery.min.js',
                         //'bower_components/bootstrap-formhelpers/dist/js/bootstrap-formhelpers.min.js',
                         '{,*/}*.html',
