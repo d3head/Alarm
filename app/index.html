@@ -1,0 +1,92 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Будильник</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/flat-ui.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="container">
+      <header class="header">
+        <h1>Будильник</h1>
+      </header>
+    </div>
+    
+    <div class="contain">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-3 text-center">
+            <div id="settime">
+              <span class="how">Укажите время:</span>
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input id="time" type="text" class="input-hg form-control bfh-phone" maxlength="5" placeholder="23:56" data-format="dd:dd" autofocus>
+                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div id="alarm" class="alarm">
+              <p class="alarm-time">
+                Время установлено на:
+                <span id="timer" class="timer"></span>
+              </p>
+              <div class="clear"></div>
+              <p class="alarm-wakeup">Просыпайся!</p>
+              <div class="clear"></div>
+              <button id="disable" class="btn btn-danger btn-embossed">Выключить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <footer class="footer">
+        <p>By <a href="http://oleg.so" target="_blank">Oleg @d3head</a>.</p><p>Available on <a href="http://http://github.com/d3head/Alarm" target="_blank">Github</a>.</p>
+      </footer>
+    </div>
+    
+    <audio id="alarm">
+        <source src="sounds/ring.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="bower_components/bootstrap-formhelpers/dist/js/bootstrap-formhelpers.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

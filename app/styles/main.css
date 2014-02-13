@@ -1,0 +1,52 @@
+.container {
+  width: 480px;
+}
+
+header.header {
+  text-align: center;
+}
+
+.jumbotron {
+  width: 100%;
+}
+
+.contain {
+  width: 100%;
+  background: rgba(52, 73, 94,1.0);
+  padding: 100px 0 100px 0;
+  color: #fff;
+}
+
+span.how {
+  font-size: 24px;
+}
+
+.form-control {
+  text-align: center;
+}
+
+.alarm {
+  display: none;
+}
+
+.timer {
+  font-size: 46px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer.footer {
+  background: transparent;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.alarm-wakeup {
+  display: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+}
