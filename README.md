@@ -1,4 +1,4 @@
 Alarm
 =====
 
-Just simple alarm clock
+Just a simple alarm clock
